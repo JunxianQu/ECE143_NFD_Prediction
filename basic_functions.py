@@ -53,6 +53,7 @@ def plot(df,feature,dict_trait):
     
     plt.figure(figsize=(20,3))
     plt.bar(sorted_percentage.keys(),sorted_percentage.values(),width=0.5)
+    plt.ylabel('Percentage of the trait type')
     plt.xticks(range(len(sorted_percentage)),sorted_percentage.keys(),rotation=75)
     plt.title(feature)
 
@@ -114,67 +115,7 @@ def grouping(value):
     Group by value.
 
     '''
-    if value==0:
+    if value in range(0,2):
         return '0'
-    if value in range(1,8):
+    if value in range(5,15):
         return '1'
-    if value in range(8,15):
-        return '2'
-    # if value in range(10,15):
-    #     return '3'
-    
-def no_sold_token(sales,traits):
-    '''
-    The function takes 
-    in 2 dataframes sales
-    and traits. Sales
-    dataframe has NFT ids,
-    and the price at which the
-    tokens are sold.
-    The traits dataframe 
-    has set of traits
-    for each token id.
-
-    Parameters
-    ----------
-    sales : pandas Dataframe
-        Contains the price at
-        which the NFTs are sold.
-    traits : pandas Dataframe.
-        Contains the traits of
-        the NFTs.
-
-    Returns
-    -------
-    None.
-
-    '''
-    
-    assert isinstance(sales,pd.DataFrame)
-    assert isinstance(traits,pd.DataFrame)
-    
-    
-    count = sales.count(axis='columns')
-    
-    groups = count.groupby(by=lambda i:grouping(count.loc[i]))
-    
-    dictt_traits = types_of_traits(traits)
-    print(dictt_traits)
-    
-    idx = groups.get_group('2').index
-    traits_0 = traits.loc[idx]
-    
-    plot(traits_0,'Background',dictt_traits['Background'])
-    
-    
-
-sales = pd.read_csv('sales_data.csv')
-trait = pd.read_csv('trait_data_file.csv')
-sales = sales.set_index('TokenID') 
-trait = trait.set_index('TokenID')
-# print(sales)
-# print(trait)
-no_sold_token(sales, trait)
-
-
-
