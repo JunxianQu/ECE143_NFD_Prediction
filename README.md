@@ -14,6 +14,9 @@ This file calls the OpenSea API and returns a JSON with the sale price for every
 It might be a good idea to run this code in batches, ranges from 0 - 9999
 ### csv_trans.py
 this file loads JSON data and converts into CSV
+### listed_traits.py
+this file takes traits_data_file.csv which contains the trait data for each ape and listing_data.csv which contains data on which apes
+are currently on sale and exports a csv with the trait data for each ape on sale (CSV)
 ### Bar_Graphs_Visualization.ipynb
 The Jupyter file is run to visualize the bar graphs. It imports functions from basic_functions.py.
 
