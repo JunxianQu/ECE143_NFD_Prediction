@@ -28,7 +28,7 @@ The file contain the offered price and transaction history of all the Bored Apes
 
 ## How to run the code
 1.Clone the repository. <br>
-2. Run Bar_Graphs_Visualization.ipynb to visualize the bar graphs.
+2. Run Bar_Graphs_Visualization.ipynb to visualize the bar graphs.<br>
 3. Run NFT_Prediction.ipynb to see the performance of regressior and the feature importance graph.  
 
 ## Required packages
