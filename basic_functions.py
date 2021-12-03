@@ -101,10 +101,10 @@ def grouping(value):
     '''
     Function returns the
     group number depending
-    on range. If value is 0
-    return 0. If value is in
-    [1,4] return 1, [5,9] return
-    2 and [10,14] return 3
+    on range. If value is within 
+    [0,2) it returns 0. If value
+    is within the range [4,15) it
+    returns 1.
 
     Parameters
     ----------
@@ -117,5 +117,5 @@ def grouping(value):
     '''
     if value in range(0,2):
         return '0'
-    if value in range(5,15):
+    if value in range(4,15):
         return '1'
