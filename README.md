@@ -23,7 +23,7 @@ The Jupyter file is run to visualize the bar graphs. It imports functions from b
 The Jupyter file is run to split the data into training, testing and targeting sets, train a random forest regressor using the datasets and visualize the performance on testing set as well as the feature importance of each trait category. It load the date from trait_data_file_with_name.csv and trait_data_file_with_offer_name.csv.   
 ### trait_data_file_with_name.csv
 The file contain the trait information of all the Bored Apes with the first row presenting the names of trait categories. 
-### trait_data_file_with_offer_name
+### trait_data_file_with_offer_name.csv
 The file contain the offered price and transaction history of all the Bored Apes with the first row indicating what is the column present.   
 
 ## How to run the code
