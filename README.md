@@ -19,10 +19,17 @@ this file takes traits_data_file.csv which contains the trait data for each ape 
 are currently on sale and exports a csv with the trait data for each ape on sale (CSV)
 ### Bar_Graphs_Visualization.ipynb
 The Jupyter file is run to visualize the bar graphs. It imports functions from basic_functions.py.
+### NFT_Prediction.ipynb
+The Jupyter file is run to split the data into training, testing and targeting sets, train a random forest regressor using the datasets and visualize the performance on testing set as well as the feature importance of each trait category. It load the date from trait_data_file_with_name.csv and trait_data_file_with_offer_name.csv.   
+### trait_data_file_with_name.csv
+The file contain the trait information of all the Bored Apes with the first row presenting the names of trait categories. 
+### trait_data_file_with_offer_name
+The file contain the offered price and transaction history of all the Bored Apes with the first row indicating what is the column present.   
 
 ## How to run the code
 1.Clone the repository. <br>
 2. Run Bar_Graphs_Visualization.ipynb to visualize the bar graphs.
+3. Run NFT_Prediction.ipynb to see the performance of regressior and the feature importance graph.  
 
 ## Required packages
 numpy <br>
