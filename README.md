@@ -7,6 +7,8 @@ The file is used for extracting id, current highest price offered by others and 
 The file is used for extracting feature name, feature type and feature id. The file is saved in json and csv.
 ### basic_functions.py
 The file has the necessary functions for plotting the bar graphs.
+### floor_tracker.py
+The file reads sales_traits.csv and trait_data.csv and outputs the floor prices for each trait into json file trait_floors.json
 ### Bar_Graphs_Visualization.ipynb
 The Jupyter file is run to visualize the bar graphs. It imports functions from basic_functions.py.
 
