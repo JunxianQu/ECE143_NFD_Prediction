@@ -27,7 +27,9 @@ This notebook also visualizes the minimum asks for each trait count, as well as 
 ### trait_data_file_with_name.csv
 The file contain the trait information of all the Bored Apes with the first row presenting the names of trait categories. 
 ### trait_data_file_with_offer_name.csv
-The file contain the offered price and transaction history of all the Bored Apes with the first row indicating what is the column present.   
+The file contain the offered price and transaction history of all the Bored Apes with the first row indicating what is the column present.
+### listing_data.csv
+This file contains the listing price for every ape on sale
 
 ## How to run the code
 1. Clone the repository. <br>
