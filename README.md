@@ -30,6 +30,8 @@ The file contain the trait information of all the Bored Apes with the first row 
 The file contain the offered price and transaction history of all the Bored Apes with the first row indicating what is the column present.
 ### listing_data.csv
 This file contains the listing price for every ape on sale
+### sales_data.csv
+This file contains the past sale prices for every ape
 
 ## How to run the code
 1. Clone the repository. <br>
